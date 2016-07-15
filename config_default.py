@@ -8,8 +8,8 @@ ACCESS_TOKEN =
 BRIDGE_IP = 
 USER = 
 
-# Dash buttons
-buttons = {
+# Dash button actions
+actions = {
     "button_mac1": action1,
     "button_mac2": action2
 }

@@ -25,7 +25,6 @@ class WunderlistClient():
         return lists[0]["id"]
     
     def create_task(self, list_name, title):
-        "creating task"
         payload = {
             "list_id": self.get_list_id(list_name),
             "title": title

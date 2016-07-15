@@ -9,8 +9,7 @@ def udp_filter(pkt):
         if isinstance(option, tuple):
             if 'requested_addr' in option:
                 # we've found the IP address, which means its the second and final UDP request, so we can trigger our action
-                action = config.buttons[pkt.src]
-                action.execute()
+                config.buttons[pkt.src].execute()
         
 print "Waiting for a button press..."
 sniff(prn=udp_filter, store=0, filter="udp", lfilter=lambda d: d.src in list(config.buttons.keys()))
