@@ -8,5 +8,5 @@
 6. Edit config.py to modify the _actions_ dictionary with the MAC addresses (**must** be lowercase) of your Dash buttons and corresponding actions. Several Wunderlist and Philips Hue actions are provided in the actions module. Any additional actions must implement the base Action class.
 7. Run the script by executing `python dash.py`
 8. After the script is running and says "Waiting for a button press...", press the Dash's button.
-9. You should see a task added to your specified list.
+9. You should see your action execute.
 10. CTRL-C exits the program.
