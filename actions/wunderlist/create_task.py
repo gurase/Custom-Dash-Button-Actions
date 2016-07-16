@@ -7,5 +7,5 @@ class CreateTaskAction(Action):
         self.list_name = list_name
         self.task_title = task_title
     def execute(self):
-        client = WunderlistClient(config.CLIENT_ID, config.ACCESS_TOKEN)
+        client = WunderlistClient(config.WUNDERLIST_CLIENT_ID, config.WUNDERLIST_ACCESS_TOKEN)
         client.create_task(self.list_name, self.task_title)
