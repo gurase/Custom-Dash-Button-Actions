@@ -1,1 +1,1 @@
-from .toggle_lights_action import ToggleLightsAction
+from .toggle_group_action import ToggleGroupAction
