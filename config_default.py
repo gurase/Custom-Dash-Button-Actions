@@ -1,12 +1,12 @@
 from actions import wunderlist, hue
 
 # Wunderlist credentials
-CLIENT_ID = 
-ACCESS_TOKEN = 
+WUNDERLIST_CLIENT_ID = 
+WUNDERLIST_ACCESS_TOKEN = 
 
 # Hue info
-BRIDGE_IP = 
-USER = 
+HUE_BRIDGE_IP = 
+HUE_USER = 
 
 # Dash button actions
 actions = {
