@@ -1,4 +1,4 @@
-# Dash Button Wunderlist
+# Dash Button Custom Actions
 ## About
 I purchased a bunch of Amazon Dash buttons to do a few different things. Most of them I use to add items to my shared shopping list in Wunderlist. Some I set up to control my Philips Hue lights. This app handles all those actions and makes it easy to add additional ones.
 ## Installation
