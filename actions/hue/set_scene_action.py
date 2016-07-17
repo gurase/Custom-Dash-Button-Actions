@@ -1,11 +1,11 @@
-from ..base import Action
-from .client import HueClient
+from .base import HueAction
 import config
 
-class SetSceneAction(Action):
+class SetSceneAction(HueAction):
     def __init__(self, group_name, scene_name):
+        super(SetSceneAction, self).__init__()
         self.group_name = group_name
         self.scene_name = scene_name
+        
     def execute(self):
-        client = HueClient(config.HUE_IP, config.HUE_USER)
-        client.set_scene(self.group_name, self.scene_name)
+        self.client.set_scene(self.group_name, self.scene_name)

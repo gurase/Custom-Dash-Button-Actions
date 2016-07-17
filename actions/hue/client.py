@@ -50,6 +50,7 @@ class HueClient():
         else:
             r.raise_for_status()
     
+    # TODO: Move this out into a common area
     def get_url(self, url):
         r = requests.get(url)
         if (r.status_code == requests.codes.ok):
