@@ -1,7 +1,9 @@
 # Dash Button Wunderlist
+## About
+I purchased a bunch of Amazon Dash buttons to do a few different things. Most of them I use to add items to my shared shopping list in Wunderlist. Some I set up to control my Philips Hue lights. This app handles all those actions and makes it easy to add additional ones.
 ## Installation
 1. Install `scapy`
-2. Install the other python requriements by running `pip install -r requirements.txt`
+2. Install the other python requirements by running `pip install -r requirements.txt`
 3. Find out the ethernet MAC address of your Dash by looking at your router's logs after pressing the Dash's button.  The ethernet MAC address will be a number that looks something like _74:c2:46:4a:52:af_.
 4. Rename config_default.py to config.py
 5. Edit config.py with any API credentials you might need. Examples are provided for Wunderlist and Philips Hue.
