@@ -8,4 +8,4 @@ class SetSceneAction(Action):
         self.scene_name = scene_name
     def execute(self):
         client = HueClient(config.HUE_IP, config.HUE_USER)
-        print client.set_scene(self.group_name, self.scene_name)
+        client.set_scene(self.group_name, self.scene_name)
