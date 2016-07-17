@@ -1,2 +1,3 @@
 from .toggle_group_action import ToggleGroupAction
 from .set_scene_action import SetSceneAction
+from .color_cycle_action import ColorCycleAction

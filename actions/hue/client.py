@@ -17,6 +17,10 @@ class HueClient():
         scene_id = self.get_scene_id(group_id, scene_name)
         return self.set_state(group_id, scene=scene_id)
     
+    def color_cycle(self, group_name):
+        group_id = self.get_group_id(group_name)
+        return self.set_state(group_id, on=True, effect="colorloop")
+    
     def get_groups(self):
         return self.get_url(self.groups_url)
     
