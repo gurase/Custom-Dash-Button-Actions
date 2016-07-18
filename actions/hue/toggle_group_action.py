@@ -1,5 +1,4 @@
 from .base import HueAction
-from ..base import Action
 import config
 
 class ToggleGroupAction(HueAction):
