@@ -18,6 +18,7 @@ class HueClient():
         
     def toggle_group(self, group_name):
         group_id = self.get_group_id(group_name)
+        # if any light in the group is on, treat that as the entire group being on
         is_on = not self.get_group(group_id)["state"]["any_on"]
         return self.set_state(group_id, on=is_on)
     
@@ -33,6 +34,7 @@ class HueClient():
     def get_groups(self):
         return self.get_url(self.groups_url)
     
+    # return group id of first group with given name; assumes each group has a unique name
     def get_group_id(self, group_name):
         groups = self.get_groups()
         named_group = filter(lambda x: groups[x]["name"] == group_name, groups.keys())

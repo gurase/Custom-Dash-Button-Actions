@@ -28,9 +28,9 @@ class WunderlistClient():
         else:
             r.raise_for_status()
     
+    # return list id of first list with given name; assumes each list has a unique name
     def get_list_id(self, list_name):
         lists = filter(lambda x: x["title"] == list_name, self.get_lists())
-        # TODO: throw a real exception if list is not found, instead of index out of bounds
         return lists[0]["id"] if lists else None
     
     def create_task(self, list_name, title):

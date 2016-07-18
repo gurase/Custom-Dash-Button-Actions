@@ -6,5 +6,6 @@ class CreateTaskAction(WunderlistAction):
         super(CreateTaskAction, self).__init__()
         self.list_name = list_name
         self.task_title = task_title
+        
     def execute(self):
         self.client.create_task(self.list_name, self.task_title)
